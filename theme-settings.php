@@ -1,6 +1,6 @@
 <?php
 
-  function abrk_form_system_theme_settings_alter(&$form, &$form_state) {
+  function beauty_corner_form_system_theme_settings_alter(&$form, &$form_state) {
 
     $form['libraries']['#description'] = "These libraries are applied only for IE 8 and older";
 

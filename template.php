@@ -1,6 +1,6 @@
 <?php
 
-function abrk_preprocess_html(&$vars) {
+function beauty_corner_preprocess_html(&$vars) {
 
 
   $libraries = array();
