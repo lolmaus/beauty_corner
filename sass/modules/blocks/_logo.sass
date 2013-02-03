@@ -1,0 +1,18 @@
+@import susy
+@import ../../base/variables/grid
+
+#block-block-2, #block-block-3
+  outline: 1px solid red
+  +span-columns(4)
+  +push(4)
+
+  text-align:   center
+  font-size:    2em
+  line-height:  1em
+
+  a, span
+    display: inline-block
+    width:        247px
+    height:       82px
+    background:   transparent url(../images/logo.png) center center no-repeat
+    +hide-text
