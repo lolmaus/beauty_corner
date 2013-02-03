@@ -101,8 +101,6 @@
     </nav><!-- /#subheader-wrapper -->
   <?php endif; ?>
 
-  <div id="thebar-wrapper" class="container-wrapper"><div id="thebar" class="container"><div></div></div></div>
-
   <div id="main-wrapper" class="container-wrapper"><div id="main" class="container" role="main">
 
     <?php if ($page['sidebar_first']): ?>
