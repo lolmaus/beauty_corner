@@ -1,0 +1,33 @@
+name = Beauty Corner
+core = 7.x
+base theme = boron
+
+; Prevent using Boron's layout.css
+stylesheets[all][] = css/layout.css
+
+; Base styleseet
+stylesheets[all][] = css/style.css
+
+; IE-only stylesheet
+stylesheets-conditional[lt IE 9][all][] = css/ie.css
+
+; Regions --------------------------------------------------------------------
+; these content regions are available for block placement
+regions[ie_only] =          IE Only
+regions[header_top] =       Header top
+regions[header] =           Header
+regions[subheader] =        Subheader
+regions[highlighted] =      Highlighted
+regions[sidebar_first] =    Sidebar First
+regions[content] =          Content
+regions[sidebar_second] =   Sidebar Second
+regions[footer] =           Footer
+
+; Options --------------------------------------------------------------------
+; these are the checkboxes that are available on the theme settings page.
+
+; these are the stock options
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = comment_user_verification
+features[] = favicon
