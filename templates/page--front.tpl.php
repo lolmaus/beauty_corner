@@ -101,51 +101,53 @@
     </nav><!-- /#subheader-wrapper -->
   <?php endif; ?>
 
-  <div id="main-wrapper" class="container-wrapper"><div id="main" class="container" role="main">
+  <div id="main-wrapper" class="container-wrapper">
+    <div id="main-wrapper-inner">
+      <div id="main" class="container" role="main">
 
-    <?php if ($page['sidebar_first']): ?>
-      <aside id="sidebar-first-wrapper" role="complementary">
-        <div id="sidebar-first">
-          <?php print render($page['sidebar_first']); ?>
-        </div>
-      </aside> <!-- /#sidebar-first -->
-    <?php endif; ?>
+        <?php if ($page['sidebar_first']): ?>
+          <aside id="sidebar-first-wrapper" role="complementary">
+            <div id="sidebar-first">
+              <?php print render($page['sidebar_first']); ?>
+            </div>
+          </aside> <!-- /#sidebar-first -->
+        <?php endif; ?>
 
-    <div id="content" class="column">
+        <div id="content" class="column">
 
-      <?php if ($page['highlighted']): ?>
-        <div id="highlighted"><?php print render($page['highlighted']); ?></div>
-      <?php endif; ?>
+          <?php if ($page['highlighted']): ?>
+            <div id="highlighted"><?php print render($page['highlighted']); ?></div>
+          <?php endif; ?>
 
-      <?php if ($breadcrumb): ?>
-        <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-      <?php endif; ?>
+          <?php if ($breadcrumb): ?>
+            <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+          <?php endif; ?>
 
-      <?php print $messages; ?>
+          <?php print $messages; ?>
 
-      <?php if ($tabs): ?>
-        <div class="tabs"><?php print render($tabs); ?></div>
-      <?php endif; ?>
+          <?php if ($tabs): ?>
+            <div class="tabs"><?php print render($tabs); ?></div>
+          <?php endif; ?>
 
-      <?php print render($page['help']); ?>
+          <?php print render($page['help']); ?>
 
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
+          <?php if ($action_links): ?>
+            <ul class="action-links"><?php print render($action_links); ?></ul>
+          <?php endif; ?>
 
-      <?php print render($page['content']); ?>
-      <?php print $feed_icons; ?>
-    </div> <!-- /#content -->
+          <?php print render($page['content']); ?>
+          <?php print $feed_icons; ?>
+        </div> <!-- /#content -->
 
-    <?php if ($page['sidebar_second']): ?>
-      <aside id="sidebar-second-wrapper" role="complementary">
-        <div id="sidebar-second">
-          <?php print render($page['sidebar_second']); ?>
-        </div>
-      </aside> <!-- /#sidebar-second -->
-    <?php endif; ?>
+        <?php if ($page['sidebar_second']): ?>
+          <aside id="sidebar-second-wrapper" role="complementary">
+            <div id="sidebar-second">
+              <?php print render($page['sidebar_second']); ?>
+            </div>
+          </aside> <!-- /#sidebar-second -->
+        <?php endif; ?>
 
-  </div></div> <!-- /#main, /#main-wrapper -->
+  </div></div></div> <!-- /#main, /#main-wrapper -->
 
   <?php if ($page['footer']): ?>
     <footer id="footer-wrapper" role="contentinfo" class="container-wrapper">
