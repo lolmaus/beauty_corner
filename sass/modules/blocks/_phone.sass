@@ -1,7 +1,11 @@
 @import susy
 @import ../../base/variables/grid
+@import ../../base/variables/fonts
 
 #block-block-4
   outline: 1px solid red
   +span-columns(4 omega)
   text-align: right
+  font-size: $fontsize-header
+  $line-height-in-px: ($fontsize-header / 1em) * 16px
+  margin-top: ($logo-height / 2) - ($line-height-in-px  / 2)
