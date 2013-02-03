@@ -152,7 +152,7 @@
   <?php if ($page['footer']): ?>
     <footer id="footer-wrapper" role="contentinfo" class="container-wrapper">
       <div id="footer" class="container">
-        <?php print render($page['foote                     r']); ?>
+        <?php print render($page['footer']); ?>
       </div> <!-- /.container, /#footer -->
     </footer><!-- /#footer-wrapper -->
   <?php endif; ?>
